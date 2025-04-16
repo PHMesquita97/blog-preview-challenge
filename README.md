@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]([https://github.com/PHMesquita97/blog-preview-challenge](https://github.com/PHMesquita97/blog-preview-challenge))
-- Live Site URL: [Add live site URL here]([https://phmesquita97.github.io/blog-preview-challenge/](https://phmesquita97.github.io/blog-preview-challenge/))
+- Solution URL: [https://github.com/PHMesquita97/blog-preview-challenge]
+- Live Site URL: [https://phmesquita97.github.io/blog-preview-challenge/]
 
 ## My process
 
