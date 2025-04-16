@@ -1,0 +1,131 @@
+/* Reset básico e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+  }
+  
+  :root {
+    font-size: 62.5%; /* 1rem = 10px */
+  
+    --brand-bg: hsl(47, 88%, 63%);
+    --card-bg: hsl(0, 0%, 100%);
+    --text-primary: hsl(0, 0%, 7%);
+    --text-secondary: hsl(0, 0%, 50%);
+    --card-shadow: hsl(0, 0%, 7%);
+  }
+  
+  
+  body {
+    background-color: var(--brand-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* Card principal */
+  .blog-card {
+    background-color: var(--card-bg);
+    border-radius: 2rem;
+    border: 2px solid var(--text-primary);
+    box-shadow: 8px 8px 0 var(--text-primary);
+    padding: 2.4rem;
+    max-width: 38rem;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    box-shadow: 12px 12px 0 var(--text-primary);
+  }
+  
+  /* Imagem do card */
+  .card-image {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  /* Conteúdo textual */
+  .card-content {
+    margin-top: 2.4rem;
+  }
+  
+  .category-label {
+    display: inline-block;
+    background-color: var(--brand-bg);
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .publish-date {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-top: 1.2rem;
+  }
+  
+  /* Título */
+  .card-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 1.2rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    
+  }
+  
+  .card-title:hover {
+    color: var(--brand-bg);
+  }
+  
+  /* Descrição */
+  .card-description {
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+  
+  /* Rodapé do autor */
+  .author-info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 2.4rem;
+  }
+  
+  .avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+  }
+  
+  .author-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-primary);
+  }
+
+  @media (max-width: 400px) {
+    .blog-card {
+      padding: 1.6rem;
+    }
+  
+    .card-title {
+      font-size: 1.8rem;
+    }
+  
+    .card-description {
+      font-size: 1.3rem;
+    }
+  }
+  
+  
